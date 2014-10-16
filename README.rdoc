@@ -1,5 +1,5 @@
 == README
 
-Next gen communication tool??
+Next gen communication tool
 
 Yay!
