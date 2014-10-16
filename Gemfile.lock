@@ -61,7 +61,10 @@ GEM
     minitest (5.4.1)
     multi_json (1.10.1)
     orm_adapter (0.5.0)
+<<<<<<< HEAD
     pg (0.17.1)
+=======
+>>>>>>> 17b919554281bbe65a742b793801b31898da0c9a
     polyglot (0.3.5)
     rack (1.5.2)
     rack-test (0.6.2)
