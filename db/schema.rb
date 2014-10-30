@@ -11,29 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20141014124444) do
-=======
-ActiveRecord::Schema.define(version: 20140915161707) do
->>>>>>> 17b919554281bbe65a742b793801b31898da0c9a
+ActiveRecord::Schema.define(version: 20141023114837) do
+
+  create_table "comments", force: true do |t|
+    t.string   "user_name"
+    t.text     "body"
+    t.integer  "status_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "statuses", force: true do |t|
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
+    t.string   "name"
   end
 
-<<<<<<< HEAD
-  create_table "users", force: true do |t|
-=======
   add_index "statuses", ["user_id"], name: "index_statuses_on_user_id"
 
   create_table "users", force: true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "profile_name"
->>>>>>> 17b919554281bbe65a742b793801b31898da0c9a
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
